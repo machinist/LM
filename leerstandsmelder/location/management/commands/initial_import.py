@@ -61,9 +61,9 @@ class Command(BaseCommand):
                         created=loc['created'], lat=loc['lonlat'][1], lon=loc['lonlat'][0],
                         active=loc['active'], hidden=loc['hidden'], demolished=loc['demolished'], rumor=loc.get('rumor', False))
                         
-                location.street = loc.get('buildingType', '') or ''
-                location.postcode = loc.get('buildingType', '') or ''
-                location.city = loc.get('buildingType', '') or ''
+                location.street = loc.get('street', '') or ''
+                location.postcode = loc.get('postcode', '') or ''
+                location.city = loc.get('city', '') or ''
                 
                 if 'buildingType' in loc:
                     location.building_type = loc['buildingType']
