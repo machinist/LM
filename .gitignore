@@ -1,0 +1,9 @@
+bin
+eggs
+develop-eggs
+.installed.cfg
+parts
+*.pyc
+*.swp
+__pycache__
+*.sqlite3
