@@ -6,7 +6,7 @@ class Location(models.Model):
     title = models.CharField(max_length=255)
     slug = models.SlugField(unique=True)
     building_type = models.CharField(max_length=255)
-    description = models.CharField(max_length=255)
+    description = models.TextField(blank=True)
 
     street = models.CharField(max_length=255)
     postcode = models.CharField(max_length=10)
