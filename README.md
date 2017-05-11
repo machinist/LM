@@ -9,6 +9,7 @@
 - virtualenv
 - virtualenvwrapper
 
+
     apt-get install python3-dev libjpeg-dev zlib1g-dev python3-virtualenv
 
 
