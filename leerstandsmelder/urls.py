@@ -17,7 +17,10 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
+from leerstandsmelder.region import views as region_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^region/$', region_views.region_list),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+

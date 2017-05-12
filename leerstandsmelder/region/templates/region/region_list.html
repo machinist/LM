@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Regions</title>
+    </head>
+    <body>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Region</th>
+                    <th>Locations</th>
+                </tr>
+            {% for region in object_list %}
+            <tr>
+                <td>{{ region.title }}</td>
+                <td>{{ region.location_set.count }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
