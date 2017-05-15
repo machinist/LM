@@ -9,13 +9,15 @@
 - virtualenv
 - virtualenvwrapper
 
+For debian based systems:
 
-    apt-get install python3-dev libjpeg-dev zlib1g-dev python3-virtualenv
+    apt-get install python3-dev libjpeg-dev zlib1g-dev python3-venv build-essential
 
 
 ## Installation
 
-    mkvirtualenv -p /usr/bin/python3 leerstandsmelder
+    python3 -m venv <path to venv>
+    source <path to venv>/bin/activate
     pip install ipython zc.buildout
     buildout -Nv
 
@@ -45,3 +47,4 @@ import data from original leerstandsmelder
 start development server
 
     bin/development runserver
+
